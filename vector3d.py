@@ -16,4 +16,8 @@ class Vector3D:
         n = self.len()
         return Vector3D(self.x / n, self.y / n, self.z / n)
     
+    def dot(self, other):
+        return self.x*other.x + self.y*other.y + self.z*other.z
+    
+    
     
