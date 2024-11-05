@@ -12,3 +12,8 @@ class Vector3D:
     def len(self):
         return sqrt(self.x*self.x+self.y*self.y+self.z*self.z)
     
+    def unit(self):
+        n = self.len()
+        return Vector3D(self.x / n, self.y / n, self.z / n)
+    
+    
